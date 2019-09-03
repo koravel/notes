@@ -1,0 +1,49 @@
+.note-title {
+    
+}
+
+.note-title-editing {
+
+}
+
+.note-description {
+    
+}
+
+.note-description-editing {
+    
+}
+
+.delete-note-btn {
+
+}
+
+#add-note-btn {
+    border: 2px solid black;
+}
+
+body {
+    text-align: center;
+}
+
+.note-container {
+    margin: 2px;
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: auto;
+    max-width: auto;
+    overflow: auto;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    background-color: lightgray;
+    flex-direction: row;
+    position: relative;
+}
+
+.noteContextMenu {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

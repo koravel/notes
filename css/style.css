@@ -1,34 +1,55 @@
 .note-title {
-    
+    background: lightgrey;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    display: flex;
+    min-height: 20px;
+    max-height: 30px;
 }
 
 .note-title-editing {
-
+    background: white;
+    border: inset;
+    border-width: 1px;
+    resize: both;
+    overflow: auto;
+    display: flex;
+    min-height: 20px;
+    max-height: 30px;
 }
 
 .note-description {
-    
+    background: lightgrey;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    display: flex;
 }
 
 .note-description-editing {
-    
+    background: white;    
+    border: inset;
+    border-width: 1px;
+    resize: both;
+    overflow: auto;
+    display: flex;
 }
 
-.delete-note-btn {
-
+.save-changes-btn {
+    visibility: hidden;
 }
+
 
 #add-note-btn {
     border: 2px solid black;
-}
-
-body {
-    text-align: center;
+    align-self: baseline;
 }
 
 .note-container {
     margin: 2px;
-    padding: 4px 8px;
+    padding: 4px;
+    resize: both;
     border: 2px solid black;
     border-radius: 20px;
     width: auto;
@@ -39,11 +60,26 @@ body {
     background-color: lightgray;
     flex-direction: row;
     position: relative;
+    align-self: baseline;
 }
 
-.noteContextMenu {
+.note-context-menu {
     visibility: hidden;
     position: absolute;
     top: 0;
     right: 0;
+}
+
+hr {
+    padding: 0;
+    margin: 4px;
+}
+
+input[type=text] {
+    margin: 8px;
+}
+
+.edit-container {
+    max-height: calc(100%-20px);
+    min-height: calc(100%-10px);
 }
